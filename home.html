@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- تغيير اتجاه الصفحة للغة العربية -->
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ربط ملف التنسيقات CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- إضافة خط من جوجل لتحسين المظهر -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <!-- تغيير عنوان الصفحة -->
+    <title>مقهى | الرئيسية</title>
+</head>
+<body>
+
+    <!-- ======== الهيدر وشريط التنقل ======== -->
+    <header>
+        <nav>
+            <a href="home.html" style="font-weight: bold;">اسم المقهى</a>
+            <a href="home.html">الرئيسية</a>
+            <!-- بداية القائمة المنسدلة -->
+            <div class="dropdown">
+                <button class="dropbtn">القائمة </button>
+                <div class="dropdown-content">
+                    <a href="menu.html">مشروبات ساخنة</a>
+                    <a href="cold-drinks.html">مشروبات باردة</a>
+                    <a href="Dessert.html">حلويات</a>
+
+                </div>
+            </div>
+            <!-- نهاية القائمة المنسدلة -->
+            <a href="about.html">عن المقهى</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <!-- ======== المحتوى الرئيسي للصفحة ======== -->
+    <main>
+        <h1>أهلاً بكم في مقهانا</h1>
+        <p>هنا تجدون أفضل أنواع القهوة المحضرة بحب وشغف في أجواء دافئة ومريحة. نحن نؤمن بأن فنجان القهوة ليس مجرد مشروب، بل هو تجربة متكاملة.</p>
+
+        <!-- مثال لإضافة فيديو (يمكنك استخدام فيديو محلي أو من يوتيوب) -->
+        <section>
+            <div class="image-wrapper">
+  <img src="assistant/صوره للمقهى.jpg   " alt="ديكور المقهى">
+</div>
+        </section>
+
+        <!-- مثال لجدول (أوقات العمل) -->
+        <section>
+            <h2>أوقات العمل</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>اليوم</th>
+                        <th>ساعات العمل</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>السبت - الخميس</td>
+                        <td>8:00 صباحاً - 11:00 مساءً</td>
+                    </tr>
+                    <tr>
+                        <td>الجمعة</td>
+                        <td>4:00 عصراً - 12:00 منتصف الليل</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- زر لتغيير النمط عبر JavaScript -->
+        <button id="style-changer" class="style-button">جرّب نمطاً مختلفاً</button>
+    </main>
+
+    <!-- ======== التذييل (الفوتر) ======== -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 - اسم المقهى</p>
+    </footer>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

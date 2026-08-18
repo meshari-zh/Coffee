@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+/* ======== التنسيقات العامة ======== */
+body {
+    font-family: 'Tajawal', sans-serif; /* استخدام خط عربي جميل، يمكنك تغييره */
+    margin: 0;
+    padding: 0;
+    background-color: #fdfaf6; /* لون خلفية كريمي فاتح */
+    color: #4a4a4a; /* لون نص داكن */
+    line-height: 1.7;
+}
+
+/* ======== الهيدر وشريط التنقل ======== */
+header {
+    background-color: #38220f; /* لون بني داكن مستوحى من القهوة */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a, .dropbtn {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s; /* تأثير انتقال ناعم */
+}
+
+nav a:hover {
+    background-color: #5a381a; /* لون أفتح عند مرور الماوس */
+}
+
+/* ======== القائمة المنسدلة ======== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: inherit; /* يرث اللون من الهيدر */
+    font-family: inherit; /* يرث الخط */
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* تأكد من أن حجم الخط متوافق مع الروابط الأخرى */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* إظهار القائمة عند مرور الماوس فوق الزر */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* تغيير لون زر القائمة عند مرور الماوس */
+.dropdown:hover .dropbtn {
+    background-color: #5a381a;
+}
+
+
+/* ======== المحتوى الرئيسي والفوتر ======== */
+main {
+    padding: 20px 40px; /* إضافة هوامش داخلية للمحتوى */
+    min-height: 70vh; /* ضمان أن المحتوى يملأ جزءًا كبيرًا من الشاشة */
+}
+
+h1, h2 {
+    color: #38220f; /* لون العناوين الرئيسي */
+}
+
+footer {
+    background-color: #38220f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* تنسيق نموذج الإدخال */
+form {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ======== تنسيقات إضافية للعناصر الجديدة ======== */
+
+/* ب. كلاس لتغيير الخلفية عبر JavaScript */
+.alt-background {
+    background-color: #e8e3dc !important;
+    transition: background-color 0.5s ease;
+}
+
+/* زر تغيير النمط */
+.style-button {
+    background-color: #5a381a;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* تنسيق القائمة (المشروبات والتحلية) */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* مسافة بين عناصر القائمة */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* لإخفاء أي أجزاء من الصورة تتجاوز الإطار */
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* تأثير رفع العنصر عند المرور عليه */
+}
+
+.menu-item-text {
+    padding: 20px;
+    flex-grow: 1; /* يسمح للنص بأخذ المساحة المتبقية */
+}
+
+.menu-item-text h3 {
+    margin-top: 0;
+    color: #38220f;
+}
+
+.menu-item-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* يضمن أن الصورة تملأ المساحة دون تشويه */
+}
+
+/* تنسيق الجداول */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #38220f;
+    color: #ffffff;
+    text-align: right;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* تنسيق عناوين أقسام القائمة (مشروبات باردة، حارة، تحلية) */
+.menu-section-title {
+    text-align: right;
+    color: #38220f;
+    margin: 30px 0 15px;
+    border-bottom: 2px solid #5a381a;
+    padding-bottom: 10px;
+}
+ .image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* توسيط أفقي */
+  margin: 40px 0; /* مسافة رأسية */
+ }
+.image-wrapper img {
+  width: 95%;        /* كان 85% */
+  max-width: 1100px; /* كان 1000px */
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+}
+ 
